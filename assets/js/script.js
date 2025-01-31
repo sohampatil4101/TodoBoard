@@ -12,6 +12,9 @@ let taskItem = {};
 let taskRemover = {};
 const date = new Date();
 const taskCompleteSound = new Audio("./assets/sounds/task-complete.mp3");
+
+
+
 const getWeekDayName = function (dayNumber) {
   switch (dayNumber) {
     case 0:
@@ -124,6 +127,7 @@ const removeTask = function () {
   }
 }
 const addTask = function () {
+  console.log("nbcjhsbjkcnsjkcnd", taskInput.value)
   taskInputValidation(taskInput.value);
   addEventOnMultiElem(taskRemover, removeTask);
 }
